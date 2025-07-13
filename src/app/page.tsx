@@ -43,7 +43,7 @@ export default function LandingPage() {
       <header className="container mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <Logo className="h-8 w-8 text-primary" />
-          <span className="text-xl font-bold">VendorLink</span>
+          <span className="text-xl font-bold">Corpeas</span>
         </Link>
         <nav className="flex items-center gap-4">
           <Button variant="ghost" asChild>
@@ -63,10 +63,10 @@ export default function LandingPage() {
           ></div>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tighter fade-in-up">
-              The Future of B2B Food Supply is Here
+              The Future of B2B Supply is Here
             </h1>
             <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-muted-foreground fade-in-up [animation-delay:0.2s]">
-              VendorLink connects you with the best vendors, streamlines your ordering process, and optimizes your inventory with AI-powered insights.
+              Corpeas connects you with the best vendors, streamlines your ordering process, and optimizes your inventory with AI-powered insights.
             </p>
             <div className="mt-8 fade-in-up [animation-delay:0.4s]">
               <Button size="lg" asChild>
@@ -79,8 +79,8 @@ export default function LandingPage() {
         <section id="features" className="py-16 md:py-24 bg-background/50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h2 className="text-3xl font-bold tracking-tight">Why Choose VendorLink?</h2>
-              <p className="mt-2 text-lg text-muted-foreground">Everything you need to manage your food supply chain efficiently.</p>
+              <h2 className="text-3xl font-bold tracking-tight">Why Choose Corpeas?</h2>
+              <p className="mt-2 text-lg text-muted-foreground">Everything you need to manage your supply chain efficiently.</p>
             </div>
             <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               {features.map((feature, i) => (
@@ -98,7 +98,7 @@ export default function LandingPage() {
       </main>
       <footer className="py-6 bg-card border-t">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} VendorLink. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Corpeas. All rights reserved.</p>
         </div>
       </footer>
     </div>

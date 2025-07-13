@@ -3,8 +3,8 @@ import { Toaster } from '@/components/ui/toaster';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'VendorLink',
-  description: 'The B2B Food Delivery App for Modern Businesses',
+  title: 'Corpeas',
+  description: 'Streamlined Food & Supplies for Your Corporation',
 };
 
 export default function RootLayout({

@@ -44,7 +44,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           <SidebarHeader>
             <Link href="/" className="flex items-center gap-2">
               <Logo className="h-7 w-7 text-primary" />
-              <h1 className="text-xl font-semibold text-sidebar-foreground">VendorLink</h1>
+              <h1 className="text-xl font-semibold text-sidebar-foreground">Corpeas</h1>
             </Link>
           </SidebarHeader>
           <SidebarContent>
@@ -103,7 +103,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                         alt="@user"
                         data-ai-hint="person portrait"
                       />
-                      <AvatarFallback>VL</AvatarFallback>
+                      <AvatarFallback>CO</AvatarFallback>
                     </Avatar>
                   </Button>
                 </DropdownMenuTrigger>
