@@ -9,7 +9,7 @@ export default function DashboardPage() {
   const categories = [...new Set(products.map((p) => p.category))];
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-6 fade-in-up">
       <div>
         <h1 className="text-3xl font-bold tracking-tight">Product Marketplace</h1>
         <p className="text-muted-foreground">Find the best ingredients and supplies for your business.</p>

@@ -49,7 +49,7 @@ export default function LandingPage() {
           <Button variant="ghost" asChild>
             <Link href="/dashboard">Log In</Link>
           </Button>
-          <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
+          <Button asChild>
             <Link href="/dashboard">Get Started</Link>
           </Button>
         </nav>
@@ -62,14 +62,14 @@ export default function LandingPage() {
             data-ai-hint="warehouse food"
           ></div>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tighter">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tighter fade-in-up">
               The Future of B2B Food Supply is Here
             </h1>
-            <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-muted-foreground">
+            <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-muted-foreground fade-in-up [animation-delay:0.2s]">
               VendorLink connects you with the best vendors, streamlines your ordering process, and optimizes your inventory with AI-powered insights.
             </p>
-            <div className="mt-8">
-              <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
+            <div className="mt-8 fade-in-up [animation-delay:0.4s]">
+              <Button size="lg" asChild>
                 <Link href="/dashboard">Explore the Marketplace</Link>
               </Button>
             </div>
@@ -83,8 +83,8 @@ export default function LandingPage() {
               <p className="mt-2 text-lg text-muted-foreground">Everything you need to manage your food supply chain efficiently.</p>
             </div>
             <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {features.map((feature) => (
-                <Card key={feature.title} className="text-center">
+              {features.map((feature, i) => (
+                <Card key={feature.title} className="text-center transition-all duration-300 ease-in-out hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2 fade-in-up" style={{animationDelay: `${i * 0.1}s`}}>
                   <CardHeader className="items-center">{feature.icon}</CardHeader>
                   <CardContent>
                     <h3 className="text-xl font-semibold">{feature.title}</h3>

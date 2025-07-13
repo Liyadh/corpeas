@@ -43,8 +43,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         <Sidebar>
           <SidebarHeader>
             <Link href="/" className="flex items-center gap-2">
-              <Logo className="h-7 w-7 text-primary-foreground" />
-              <h1 className="text-xl font-semibold text-primary-foreground">VendorLink</h1>
+              <Logo className="h-7 w-7 text-primary" />
+              <h1 className="text-xl font-semibold text-sidebar-foreground">VendorLink</h1>
             </Link>
           </SidebarHeader>
           <SidebarContent>
@@ -52,7 +52,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
               {navItems.map((item) => (
                 <SidebarMenuItem key={item.href}>
                   <Link href={item.href} passHref>
-                    <SidebarMenuButton isActive={pathname === item.href}>
+                    <SidebarMenuButton isActive={pathname === item.href} className="transition-transform duration-300 ease-in-out hover:scale-105">
                       <item.icon />
                       {item.label}
                     </SidebarMenuButton>
@@ -118,7 +118,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
               </DropdownMenu>
             </div>
           </header>
-          <main className="flex-1 p-4 sm:p-6 bg-background">{children}</main>
+          <main className="flex-1 p-4 sm:p-6 bg-background fade-in">{children}</main>
         </SidebarInset>
       </div>
     </SidebarProvider>

@@ -5,7 +5,7 @@ import { Star } from 'lucide-react';
 
 export function VendorCard({ vendor }: { vendor: Vendor }) {
   return (
-    <Card className="transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+    <Card className="transition-all duration-300 ease-in-out hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2">
       <CardHeader className="flex flex-row items-center gap-4">
         <Image
           src={vendor.imageUrl}

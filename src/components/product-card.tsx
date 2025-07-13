@@ -7,7 +7,7 @@ import { Badge } from './ui/badge';
 
 export function ProductCard({ product }: { product: Product }) {
   return (
-    <Card className="flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+    <Card className="flex flex-col overflow-hidden transition-all duration-300 ease-in-out hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2">
       <CardHeader className="p-0 relative">
         <Image
           src={product.imageUrl}
@@ -30,8 +30,8 @@ export function ProductCard({ product }: { product: Product }) {
         <p className="text-sm text-muted-foreground">{product.vendor}</p>
       </CardContent>
       <CardFooter className="flex justify-between items-center p-4 pt-0">
-        <p className="text-xl font-bold">${product.price.toFixed(2)}</p>
-        <Button size="sm">
+        <p className="text-xl font-bold text-primary">${product.price.toFixed(2)}</p>
+        <Button size="sm" className="transition-transform duration-300 ease-in-out hover:scale-110">
           <PlusCircle className="mr-2 h-4 w-4" />
           Add
         </Button>
