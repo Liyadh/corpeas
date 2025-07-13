@@ -57,7 +57,7 @@ export default function LandingPage() {
       <main className="flex-1">
         <section className="relative py-24 md:py-32 lg:py-40">
           <div
-            className="absolute inset-0 bg-cover bg-center opacity-10"
+            className="absolute inset-0 bg-cover bg-center opacity-5"
             style={{ backgroundImage: 'url(https://placehold.co/1920x1080.png)' }}
             data-ai-hint="warehouse food"
           ></div>

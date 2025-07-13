@@ -52,7 +52,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
               {navItems.map((item) => (
                 <SidebarMenuItem key={item.href}>
                   <Link href={item.href} passHref>
-                    <SidebarMenuButton isActive={pathname === item.href} className="transition-transform duration-300 ease-in-out hover:scale-105">
+                    <SidebarMenuButton isActive={pathname === item.href}>
                       <item.icon />
                       {item.label}
                     </SidebarMenuButton>
@@ -118,7 +118,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
               </DropdownMenu>
             </div>
           </header>
-          <main className="flex-1 p-4 sm:p-6 bg-background fade-in">{children}</main>
+          <main className="flex-1 p-4 sm:p-6 bg-transparent fade-in">{children}</main>
         </SidebarInset>
       </div>
     </SidebarProvider>

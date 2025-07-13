@@ -5,7 +5,7 @@ import { Star } from 'lucide-react';
 
 export function VendorCard({ vendor }: { vendor: Vendor }) {
   return (
-    <Card className="transition-all duration-300 ease-in-out hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2">
+    <Card className="transition-all duration-300 ease-in-out hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2">
       <CardHeader className="flex flex-row items-center gap-4">
         <Image
           src={vendor.imageUrl}
@@ -21,7 +21,7 @@ export function VendorCard({ vendor }: { vendor: Vendor }) {
         </div>
       </CardHeader>
       <CardContent>
-        <div className="flex items-center gap-1 text-amber-500">
+        <div className="flex items-center gap-1 text-amber-400">
           {[...Array(5)].map((_, i) => (
             <Star key={i} className={`h-5 w-5 ${i < Math.floor(vendor.rating) ? 'fill-current' : ''}`} />
           ))}
